@@ -1,0 +1,19 @@
+.topbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.map-images {
+    width: 100%;
+    height: 100vh;
+}
+
+.map-images img {
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+}
+
+.news img {
+    width: 200px;
+}
