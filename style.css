@@ -1,81 +1,39 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background-color: skyblue;
+    background-color: rgb(78, 18, 102);
     transition: background-color 0.3s ease-in-out;
-}
-
-html:has(.year:hover) {
-    background-color: skyblue;
+    color: white;
 }
 
 .topbar {
     display: flex;
     justify-content: space-around;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.topbar a {
+    transition: background-color 0.3s ease-in-out;
+    color: rgb(78, 18, 102);
+}
+
+.topbar:hover a {
+    color: white;
+}
+
+.topbar:hover {
+    background-color: lightblue;
 }
 
 .map-images {
-    width: 100%;
-    height: 100vh;
-}
-
-.map-images img {
-    width: 100%;
-    height: 100vh;
-    object-fit: contain;
-}
-
-.news img {
-    width: 200px;
-} 
-
-.row {
-
-}
-
-.year {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     transition: transform 0.3s ease-in-out;
 }
 
-
-.year figcaption {
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1);
-}
-.year img {
-    width: 500px;
-    transition: transform 0.3s ease-in-out;
-    transform-origin: center;
+.map-images:hover {
+    transform: scaleX(3);
 }
 
-.year img:hover {
-    transform: scaleX(6.5);
-}
-
-.description {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.graph {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
-
-.year figcaption {
-    font-size: 50px;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.year:hover figcaption {
-    opacity: 0;
-}
-
-.future img {
-    width: 500px;
+.filler {
+    height: 500px;
+    width: 100vw;
 }
