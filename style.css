@@ -6,6 +6,10 @@ body {
     color: white;
 }
 
+h3 {
+    color: white;
+}
+
 .topbar {
     display: flex;
     justify-content: space-around;
@@ -36,4 +40,24 @@ body {
 .filler {
     height: 500px;
     width: 100vw;
+}
+
+.news {
+    display: flex;
+    justify-content: space-around;
+}
+
+figcaption {
+    color: white;
+}
+
+.news img {
+    height: 300px;
+    width: 300px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.news img:hover {
+    transform: scale(2);
+    border: 2px solid gold;
 }
