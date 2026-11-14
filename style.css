@@ -1,4 +1,11 @@
 body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: skyblue;
+    transition: background-color 0.3s ease-in-out;
+}
+
+html:has(.year:hover) {
     background-color: skyblue;
 }
 
@@ -26,7 +33,49 @@ body {
 
 }
 
+.year {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
 
+
+.year figcaption {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1);
+}
 .year img {
+    width: 500px;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.year img:hover {
+    transform: scaleX(6.5);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.graph {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.year figcaption {
+    font-size: 50px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.year:hover figcaption {
+    opacity: 0;
+}
+
+.future img {
     width: 500px;
 }
