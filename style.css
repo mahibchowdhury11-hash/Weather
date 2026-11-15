@@ -168,6 +168,7 @@ html {
     align-items: flex-start;
     flex-wrap: nowrap;
     gap: 20px;
+    width: 100vw;
 }
 
 .news-card {
