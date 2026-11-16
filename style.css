@@ -3,7 +3,6 @@ body {
     min-height: 100vh;
     background-color: rgb(78, 18, 102);
     color: white;
-    font-family: Arial, sans-serif;
 }
 
 .topbar {
@@ -234,4 +233,46 @@ html {
 
 .aljazeera:hover h3 {
     color: black;
+}
+
+.maps img {
+    width: 400px;
+}
+
+.map h2 {
+    color: white;
+}
+
+.map1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.map2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main {
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.stats1 {
+    background: rgb(0, 0, 0);
+    padding: 15px 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in;
+}
+
+.stats1:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color: white;
+}
+
+.back {
+    font-size: 30px;
 }
